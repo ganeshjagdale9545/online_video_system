@@ -1,0 +1,25 @@
+<html oncontextmenu="return false;">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Cache-control" content="no-store">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            img[alt="www.000webhost.com"]{display:none;    }</style>
+            <script>
+            function redirect(){
+                var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("home").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET","%66%69%6c%65%2e%68%74%6d%6c", true);
+  xhttp.send();
+                }
+            </script>
+            </head>
+            <body onload="redirect()" oncontextmenu="return false;">
+                <div id="home"></div>
+                </body>
+                </html>
